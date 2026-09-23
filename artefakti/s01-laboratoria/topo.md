@@ -3,17 +3,19 @@
 Виртуална машина: gw 1 vCPU, 1 GB RAM 
 
 Мрежови адапртери:
-Adapter 1: NAT
-Adapter 2: Internal Network (LAN1 - 10.0.1.0/24)
-Adapter 3: Internal Network (LAN2 - 10.0.2.0/24)
+- Adapter 1: NAT
+- Adapter 2: Internal Network (LAN1 - 10.0.1.0/24)
+- Adapter 3: Internal Network (LAN2 - 10.0.2.0/24)
+
 
 Виртуална машина: srv 2vCPU, 4GB
-Adapter 1: Internal Network (LAN1 - ip: 10.0.1.2)
+- Adapter 1: Internal Network (LAN1 - ip: 10.0.1.2)
 
 
 WAN: Външна мрежа за достъп до интернет през gw (Adapter 1)
-LAN1 (10.0.1.0/24): Вътрешна мрежа, свързваща gw (10.0.1.1) и srv (10.0.1.2)
-LAN2 (10.0.2.0/24): Втора вътрешна мрежа достъпна през gw (10.0.2.1)
+- LAN1 (10.0.1.0/24): Вътрешна мрежа, свързваща gw (10.0.1.1) и srv (10.0.1.2)
+- LAN2 (10.0.2.0/24): Втора вътрешна мрежа достъпна през gw (10.0.2.1)
+
 
 Тествала съм работата на конфигурацията по следния начин:
 - Проверка за IP forwarding на gw (връща 1)
